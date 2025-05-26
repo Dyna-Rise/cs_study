@@ -10,8 +10,8 @@ namespace object_study
     internal class Player
     {
         private string name;
-        private int hp;
-        private float attack;
+        protected int hp;
+        protected float attack;
         private float defense;
         private string job;
 
@@ -52,9 +52,16 @@ namespace object_study
             }
         }
 
-        public void Name(string name)
+        //名前をセット
+        public void NameSet(string name)
         {
-            this.name = name; //変数nameは引数nameと同じ 
+            this.name = name; //変数nameに引数nameを代入 
+        }
+
+        //職業をセット
+        public void JobSet(string job)
+        {
+            this.job = job; //変数jobに引数jobを代入 
         }
 
         //引数に応じて行動が変わるメソッド
@@ -77,6 +84,12 @@ namespace object_study
             Console.WriteLine("攻撃力は：" + attack);
             Console.WriteLine("防御力は：" + defense);
             Console.WriteLine("職業は：" + job);
+        }
+
+        //超必殺技
+        public void SpecialAttack()
+        {
+            Console.WriteLine("なんかすごい攻撃！");
         }
     }
 }

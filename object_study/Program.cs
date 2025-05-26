@@ -8,12 +8,13 @@ suzuki.Action();
 suzuki.StatusDisplay();
 
 Player tanaka = new Player();
-tanaka.Name("田中");
+tanaka.NameSet("田中");
 //tanaka.name = "田中";
 tanaka.Action(1);
 tanaka.StatusDisplay();
 
-Player yamada = new Player();
-yamada.Name("山田");
+Warrior yamada = new Warrior("山田");
+//yamada.NameSet("山田");
 yamada.Action(2);
+yamada.HardAttack();
 yamada.StatusDisplay();
