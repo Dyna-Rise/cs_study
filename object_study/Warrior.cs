@@ -8,6 +8,10 @@ namespace object_study
 {
     internal class Warrior : Player
     {
+        public Warrior() : this("名無し")
+        {
+        }
+
         public Warrior(string name) : base(name)
         {
             hp = 120;
@@ -18,6 +22,12 @@ namespace object_study
         public void HardAttack()
         {
             Console.WriteLine("両手持ち攻撃！");
+        }
+
+        //超必殺技
+        public override void SpecialAttack()
+        {
+            Console.WriteLine("スーパーハイパーつよつよソード！");
         }
 
     }

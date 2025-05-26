@@ -87,7 +87,7 @@ namespace object_study
         }
 
         //超必殺技
-        public void SpecialAttack()
+        public virtual void SpecialAttack()
         {
             Console.WriteLine("なんかすごい攻撃！");
         }
